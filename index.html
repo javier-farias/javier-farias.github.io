@@ -20,7 +20,7 @@
             overflow-y: scroll;
         }
         .pdf-page {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
         .pdf-page canvas {
             display: block;
@@ -61,7 +61,7 @@
                         var context = canvas.getContext("2d");
 
                         // Set the canvas size to match the page size
-                        var viewport = page.getViewport({ scale: 1.5 });
+                        var viewport = page.getViewport({ scale: 1.1 });
                         var scale = container.clientWidth / viewport.width; // Adjust the scale based on the container width
                         viewport = page.getViewport({ scale: scale });
                         canvas.width = viewport.width;
